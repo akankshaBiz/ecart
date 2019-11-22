@@ -11,6 +11,8 @@
       "alias": {
         "knexClient": "./knexClient"
       }
-    }]
+    }],
+    "@babel/plugin-proposal-class-properties"
+
   ]
 }

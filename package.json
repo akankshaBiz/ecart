@@ -6,14 +6,17 @@
     "start": "node -r esm  ./bin/www",
     "db:migrate": "knex migrate:latest",
     "db:rollback": "knex migrate:rollback",
-    "db:seed": "knex seed:run"
+    "db:seed": "knex seed:run",
+    "test": "jest --watch"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
     "body-parser": "^1.19.0",
     "debug": "~2.6.9",
     "esm": "^3.2.25",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "jest": "^24.9.0",
     "knex": "^0.20.1",
     "sqlite3": "^4.1.0"
   },

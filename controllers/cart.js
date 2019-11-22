@@ -12,7 +12,6 @@ class Cart{
         if( idx > -1){
             this.items[idx].total += this.items[idx].price;
             this.items[idx].count += 1;
-            console.log(this.items[idx], "======")
             // if(this.items[idx].count >= multiplier){
             //     var dis = basePrice + (multiplier * (this.items[idx].count%multiplier));
             //     this.items[idx].total = this.items[idx].total - dis;
@@ -39,7 +38,6 @@ class Cart{
                 }
 
                 item.total = item.total - dis;
-                console.log("&&&&",item, dis)
             }
             this.total += item.total;
         });
