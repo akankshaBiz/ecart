@@ -41,7 +41,7 @@ class Cart{
             }
             this.total += item.total;
         });
-        if(this.total > this.discountLimit) this.total = this.total - (this.total * 0.20);
+        if(this.total > this.discountLimit) this.total = this.total - 20;
         return {items: this.items, total: this.total};
     }
 }
