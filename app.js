@@ -12,5 +12,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/cart', cartRouter);
-
+app.listen(3003);
 module.exports = app;
